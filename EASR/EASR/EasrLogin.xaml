@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Easr.EasrLogin">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Path Fill="#007fff" Stroke="#007fff"  Aspect="Fill" Data="m126.8675,108.63527l343,0l0,147.02589c-128.5,-58 -207.5,41.01956 -343,24.19026l0,-171.21615z" />
+
+                <Grid RowSpacing="15" Grid.Row="1" Margin="20,60,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="1" Text="Username" TextColor="#485992" FontSize="17" Padding="5,0,0,0" Font="Roboto" />
+                    <Entry Grid.Row="1" x:Name="Uname" Placeholder="Enter your username" PlaceholderColor="#bababa" FontSize="18" Margin="0,16,0,0" FontFamily="Roboto"/>
+                    <Label Grid.Row="2" Text="Password" TextColor="#485992" FontSize="17" Padding="5,0,0,0" Font="Roboto" />
+                    <Entry Grid.Row="2" x:Name="PWord" Placeholder="Enter yuour password" IsPassword="True" PlaceholderColor="#bababa" FontSize="18" Margin="0,16,0,0" FontFamily="Roboto"/>
+                    
+                    <Grid Grid.Row="3" Margin="0,0,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="2" Clicked="Login_Clicked" x:Name="Login" Text="Login" HorizontalOptions="FillAndExpand" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" Margin="0,10,10,0" Font="Roboto"/>
+                    </Grid>
+                    
+                </Grid>
+                
+               </Grid>
+            
+
+        </ScrollView>
+    </ContentPage.Content>
+
+
+
+</ContentPage>

@@ -1,0 +1,17 @@
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\bin\Release\netstandard2.0\Easr.deps.json
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\bin\Release\netstandard2.0\Easr.dll
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\bin\Release\netstandard2.0\ref\Easr.dll
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\bin\Release\netstandard2.0\Easr.pdb
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\Easr.csproj.AssemblyReference.cache
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\EasrAdmin.xaml.g.cs
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\EasrLogin.xaml.g.cs
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\Popup.xaml.g.cs
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\Easr.AssemblyInfoInputs.cache
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\Easr.AssemblyInfo.cs
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\Easr.csproj.CoreCompileInputs.cache
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\Easr.dll
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\ref\Easr.dll
+C:\Users\SOFTWARE\Documents\Visual Studio 2019\Projects\EASR\EASR\EASR\obj\Release\netstandard2.0\Easr.pdb

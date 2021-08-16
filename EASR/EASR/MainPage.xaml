@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Easr.MainPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Path Fill="#007fff" Stroke="#007fff"  Aspect="Fill" Data="m126.8675,108.63527l343,0l0,147.02589c-128.5,-58 -207.5,41.01956 -343,24.19026l0,-171.21615z" />
+                
+                <Grid RowSpacing="15" Grid.Row="1" Margin="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Label Grid.Row="1" Text="Fullname" TextColor="#485992" FontSize="17" Padding="5,0,0,0" Font="Roboto" />
+                    <Entry Grid.Row="1" x:Name="Fname" Placeholder="Fullname e.g Jane Doe" PlaceholderColor="#bababa" FontSize="18" Margin="0,16,0,0" FontFamily="Roboto" IsReadOnly="True"/>
+                    <Label Grid.Row="2" Text="Specialty" TextColor="#485992" FontSize="17" Padding="5,0,0,0" Font="Roboto" />
+                    <Entry Grid.Row="2" x:Name="Specialty" Placeholder="Emergency Trauma" PlaceholderColor="#bababa" FontSize="18" Margin="0,16,0,0" FontFamily="Roboto" IsReadOnly="True"/>
+                    <Label Grid.Row="3" Text="Emergency Response Mode" TextColor="#485992" FontSize="17" Padding="5,0,0,0" Font="Roboto"/>
+                    <Entry Grid.Row="3" x:Name="EasrMode" Placeholder="Dual Group" PlaceholderColor="#bababa" FontSize="18" Margin="0,16,0,0" FontFamily="Roboto" IsReadOnly="True"/>
+                    <Label Grid.Row="4" Text="Emergency Response Group" TextColor="#485992" FontSize="17" Padding="5,0,0,0" Font="Roboto" />
+                    <Entry Grid.Row="4" x:Name="EasrGroup" Placeholder="Paediatrics-Anesthetic" PlaceholderColor="#bababa" FontSize="18" Margin="0,16,0,0" FontFamily="Roboto" IsReadOnly="True"/>
+                    <Label Grid.Row="5" Text="Alternate Emergency Response Group" TextColor="#485992" FontSize="17" Padding="5,0,0,0" Font="Roboto" />
+                    <Entry Grid.Row="5" x:Name="AltEasrGroup" Placeholder="Paediatrics-Trauma" PlaceholderColor="#bababa" FontSize="18" Margin="0,16,0,0" FontFamily="Roboto" IsReadOnly="True"/>
+                    <Label Grid.Row="6" Text="Account Status" TextColor="#485992" FontSize="17" Font="Roboto" Padding="5,0,0,0" />
+                    <Entry Grid.Row="6" x:Name="AccountStatus" Text="" Placeholder="Your Account Status" PlaceholderColor="#bababa" FontSize="17" FontFamily="Roboto" Margin="0,15,0,0" IsReadOnly="True"/>
+
+                    <Grid Grid.Row="7" Margin="0,0,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="2" Clicked="SetUpBtn_Clicked" x:Name="SetUpBtn" Text="Advance Setup" HorizontalOptions="FillAndExpand" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" Margin="0,2,10,0" Font="Roboto"/>
+                       </Grid>
+                    
+
+
+                </Grid>
+                
+                <Label Grid.Row="0" x:Name="easrSerial" Text="Serial Number" TextColor="white" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" FontSize="17" Padding="0,0,5,0" Font="Roboto" />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+
+</ContentPage>

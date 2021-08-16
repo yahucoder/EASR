@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Easr.EasrAdmin" BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Path Fill="#007fff" Stroke="#007fff"  Aspect="Fill" Data="m126.8675,108.63527l343,0l0,147.02589c-128.5,-58 -207.5,41.01956 -343,24.19026l0,-171.21615z" />
+                
+                
+                <Grid RowSpacing="15" Grid.Row="1" Margin="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="1" Text="Fullname" TextColor="#485992" FontSize="17" Font="Roboto" Padding="5,0,0,0" />
+                    <Entry Grid.Row="1" x:Name="Fname" Text="" Placeholder="Fullname e.g Jane Doe" PlaceholderColor="#bababa" FontSize="17" FontFamily="Roboto" Margin="0,15,0,0"/>
+                    <Label Grid.Row="2" Text="Specialty" TextColor="#485992" FontSize="17" Font="Roboto" Padding="5,0,0,0" />
+                    <Entry Grid.Row="2" x:Name="SSpecialty" Text="" Placeholder="Emergency Trauma" PlaceholderColor="#bababa" FontSize="17" FontFamily="Roboto" Margin="0,15,0,0"/>
+                    <Label Grid.Row="3" Text="Emergency Response Mode" TextColor="#485992" FontSize="17" Font="Roboto" Padding="5,0,0,0" />
+                    <Picker Grid.Row="3" x:Name="GroupMode" SelectedIndexChanged="GroupMode_SelectedIndexChanged" Title="Emergency Response Mode" FontSize="17" FontFamily="Roboto" Margin="0,15,0,0">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Single Group</x:String>
+                                <x:String>Dual Group</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Label Grid.Row="4" Text="Emergency Response Group" TextColor="#485992" FontSize="17" Font="Roboto" Padding="5,0,0,0" />
+                    <Picker Grid.Row="4" x:Name="GroupPicker" Title="Select Group" SelectedIndexChanged="GroupPicker_SelectedIndexChanged" FontSize="17" FontFamily="Roboto" Margin="0,15,0,0">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Trauma</x:String>
+                                <x:String>Paediatrics-Trauma</x:String>
+                                <x:String>Anesthetic</x:String>
+                                <x:String>Paediatrics-Anesthetic</x:String>
+                                <x:String>Supports</x:String>
+                                <x:String>Security</x:String>
+                                <x:String>None</x:String>
+
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Label Grid.Row="5" x:Name="AltGroup" Text="Alternate Emergency Response Group" TextColor="#485992" FontSize="17" Font="Roboto" Padding="5,0,0,0" />
+                    <Picker Grid.Row="5" x:Name="GroupPicker2" SelectedIndexChanged="GroupPicker2_SelectedIndexChanged" Title="Select Alternate Group"  FontSize="17" FontFamily="Roboto" Margin="0,15,0,0">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Trauma</x:String>
+                                <x:String>Paediatrics-Trauma</x:String>
+                                <x:String>Anesthetic</x:String>
+                                <x:String>Paediatrics-Anesthetic</x:String>
+                                <x:String>Supports</x:String>
+                                <x:String>Security</x:String>
+                                <x:String>None</x:String>
+
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Label Grid.Row="6" Text="Account Status" TextColor="#485992" FontSize="17" Font="Roboto" Padding="5,0,0,0" />
+                    <Entry Grid.Row="6" x:Name="AccountStatus" Text="Not Activated" Placeholder="Your Account Status" PlaceholderColor="#bababa" FontSize="17" FontFamily="Roboto" Margin="0,15,0,0" IsReadOnly="True"/>
+                   
+                    <Button Grid.Row="7"  x:Name="RegisterBtn" Clicked="RegisterBtn_Clicked" Text="Sign Up" HorizontalOptions="FillAndExpand" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" Padding="40,0,40,0" Font="Roboto"/>
+                    <Button Grid.Row="8"  x:Name="UpdateBtn" Clicked="UpdateBtn_Clicked" Text="Update" HorizontalOptions="FillAndExpand" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50"  Padding="40,0,40,0" Font="Roboto"/>
+                    <Label Grid.Row="9" x:Name="EStatus" Text="Loading" FontAttributes="Italic" VerticalOptions="End" HorizontalTextAlignment="Center" TextColor="#485992"  FontSize="17" Font="Roboto" />
+                    
+                </Grid>
+                <Label Grid.Row="0" x:Name="easrStatus" Text="" HorizontalOptions="StartAndExpand"  HorizontalTextAlignment="Start" TextColor="white" FontSize="17" Font="Roboto" Padding="5,0,0,0" />
+                <Label Grid.Row="0" x:Name="easrSerial" Text="" TextColor="white" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" FontSize="17" Font="Roboto"  Padding="0,0,5,0"/>
+
+
+
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
